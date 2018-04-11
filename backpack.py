@@ -69,7 +69,7 @@ def main():
                 print(i)
         elif (decision == 'a'):
             print("getting gpg keys for libc++ (for discord)")
-            os.system("gpg -recv-keys 0FC3042E345AD05D")
+            os.system("gpg --recv-keys 0FC3042E345AD05D")
             for j in devTools:
                 print("installing " + j)
                 os.system("yaourt -S --noconfirm " + j)
