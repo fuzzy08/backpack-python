@@ -28,9 +28,11 @@ def main():
                 "firefox-developer-edition",
                 "htop",
                 "neofetch",
-                "android-studio",
                 "virtualbox",
-                "intellij-community-edition"]
+                "pycharm-community-edition",
+                "libre-office",
+                "ranger",
+                "gparted"]
 
 
     yaourtFile = Path("/usr/bin/yaourt")
