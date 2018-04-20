@@ -33,7 +33,7 @@ def main():
                 "micro",
                 "pycharm",
                 "spotify",
-                "arduino",
+                "arduino"
                 "ranger",
                 "gparted"]
 
