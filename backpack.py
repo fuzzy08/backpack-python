@@ -28,9 +28,12 @@ def main():
                 "firefox-developer-edition",
                 "htop",
                 "neofetch",
+                "android-studio",
                 "virtualbox",
-                "pycharm-community-edition",
-                "libre-office",
+                "micro",
+                "pycharm",
+                "spotify",
+                "arduino",
                 "ranger",
                 "gparted"]
 
@@ -69,7 +72,7 @@ def main():
                 print(i)
         elif (decision == 'a'):
             print("getting gpg keys for libc++ (for discord)")
-            os.system("gpg --recv-keys 0FC3042E345AD05D")
+            os.system("gpg -recv-keys 0fC3042E345AD05D")
             for j in devTools:
                 print("installing " + j)
                 os.system("yaourt -S --noconfirm " + j)
@@ -79,7 +82,9 @@ def main():
         elif (decision == 'h'):
             options()
         elif (decision == 's'):
-            print("searching for '" + decision +"'")
+            print("please enter what you would like to search for here: ")
+            decision = input()
+            print("searching for '" + decision + "'")
             os.system("yaourt -Ss " + decision)
         else:
             print("attempting to install " + decision + "...")
